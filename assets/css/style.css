@@ -1,0 +1,131 @@
+/* ---------- ROOT PROPERTIES ---------- */
+:root {
+    /* ---------- color */
+    --bg-white: hsla(0, 0%, 100%, 1);
+    --bg-gainsboro: hsla(154, 10%, 86%, 1);
+    --bg-wild-blue-yonder: hsla(227, 39%, 75%, 1);
+    --bg-orange-crayola: hsla(18, 97%, 62%, 1);
+    --bg-roman-silver-alpha-30: hsla(210, 9%, 57%, 0.3);
+
+    --text-orange-crayola: hsla(18, 97%, 62%, 1);
+    --text-blue-crayola: hsla(216, 98%, 52%, 1);
+    --text-eerie-black: hsla(210, 11%, 15%, 1);
+    --text-eerie-black-2: hsla(0, 0%, 7%, 1);
+    --text-black: hsla(270, 100%, 0%, 1);
+
+    --border-eerie-black: hsla(0, 0%, 7%, 1);
+
+    /* ---------- font */
+    --fontFamily-inter: "Inter", sans-serif;
+    --fontFamily-clashDisplay: "ClashDisplay", cursive;
+
+    --fontSize-1: 6.2rem;
+    --fontSize-2: 4.4rem;
+    --fontSize-3: 3.8rem;
+    --fontSize-4: 3.4rem;
+    --fontSize-5: 3rem;
+    --fontSize-6: 2.5rem;
+    --fontSize-7: 2rem;
+    --fontSize-8: 1.8rem;
+    --fontSize-9: 1.4rem;
+    --fontSize-10: 2.4rem;
+
+    --weight-semiBold: 600;
+
+    /* ---------- shadow */
+    --shadow-1: 0 4px 6px hsla(256, 100%, 9%, 0.1);
+    --shadow-2: 4px 4px 0px hsla(0, 0%, 7%, 1);
+    --shadow-3: 2px 2px 0px hsla(0, 0%, 7%, 1);
+
+    /* ---------- transition */
+    --transition-1: 250ms ease;
+    --transition-2: 500ms ease;
+}
+
+/* ---------- CSS RESET ---------- */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 10px;
+    font-family: var(--fontFamily-inter);
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: var(--text-eerie-black-2);
+    background-color: var(--bg-white);
+}
+
+a,
+img,
+span,
+input,
+button,
+ion-icon {
+    display: block;
+}
+
+img {
+    height: auto;
+}
+
+input,
+button {
+    font: inherit;
+    border: none;
+    background: none;
+}
+
+input {
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+address {
+    font-style: normal;
+}
+
+ion-icon {
+    pointer-events: none;
+}
+
+/*-----------------------------------*\
+  #REUSED STYLE
+\*-----------------------------------*/
+
+/*-----------------------------------*\
+  #HEADER
+\*-----------------------------------*/
+
+/*-----------------------------------*\
+  #HERO
+\*-----------------------------------*/
+
+/*-----------------------------------*\
+  #FEATURE
+\*-----------------------------------*/
+
+/*-----------------------------------*\
+  #OFFER
+\*-----------------------------------*/
+
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
