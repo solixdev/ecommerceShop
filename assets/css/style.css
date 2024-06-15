@@ -102,13 +102,77 @@ ion-icon {
     pointer-events: none;
 }
 
-/*-----------------------------------*\
-  #REUSED STYLE
-\*-----------------------------------*/
+/* ---------- HEADER ---------- */
+.container {
+    padding-inline: 16px;
+}
 
-/*-----------------------------------*\
-  #HEADER
-\*-----------------------------------*/
+/* ---------- HEADER ---------- */
+.navbar .btn {
+    display: none;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-block: 25px;
+    z-index: 4;
+}
+
+.header.active {
+    box-shadow: var(--shadow-1);
+    background-color: var(--bg-white);
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-open-btn {
+    font-size: 3.5rem;
+}
+
+.navbar {
+    position: absolute;
+    top: 85px;
+    left: 0;
+    right: 0;
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    background-color: var(--bg-white);
+    transition: var(--transition-2);
+}
+
+.navbar.active {
+    max-height: 310px;
+    visibility: visible;
+}
+
+.navbar-list {
+    padding-block-start: 15px;
+}
+
+.navbar-link {
+    padding: 10px 20px;
+}
+
+.navbar-link,
+.card-btn .span {
+    text-transform: uppercase;
+    font-weight: var(--weight-semiBold);
+}
+
+.card-btn {
+    padding: 25px 20px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
 
 /*-----------------------------------*\
   #HERO
