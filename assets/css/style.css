@@ -186,6 +186,73 @@ ion-icon {
     object-fit: cover;
 }
 
+.section {
+    padding-block: 75px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-title {
+    margin-bottom: 45px;
+}
+
+.product-btn {
+    font-size: var(--fontSize-9);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 8px;
+    opacity: 0;
+}
+
+.product-btn ion-icon {
+    font-size: 1.4rem;
+}
+
+.product-card:is(:hover, :focus-within) .product-btn {
+    opacity: 1;
+}
+
+.product-card .card-banner {
+    position: relative;
+}
+
+.product-card .card-content {
+    margin-top: 30px;
+}
+
+.product-card .card-title:is(:hover, :focus-visible) {
+    text-decoration: underline;
+}
+
+.product-card .price {
+    color: var(--text-orange-crayola);
+    font-family: var(--fontFamily-clashDisplay);
+    font-size: var(--fontSize-7);
+    font-weight: var(--weight-semiBold);
+    margin-top: 10px;
+}
+
+.has-scrollbar {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    scroll-snap-type: initial mandatory;
+    overflow-x: auto;
+}
+
+.has-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-item {
+    min-width: 100%;
+    scroll-snap-align: start;
+}
+
 /* ---------- HEADER ---------- */
 .navbar .btn {
     display: none;
@@ -284,9 +351,7 @@ ion-icon {
     margin-inline: auto;
 }
 
-/*-----------------------------------*\
-  #FEATURE
-\*-----------------------------------*/
+/* ---------- FEATURE ---------- */
 
 /*-----------------------------------*\
   #OFFER
