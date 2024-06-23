@@ -112,6 +112,80 @@ ion-icon {
     padding-inline: 16px;
 }
 
+.shape {
+    display: none;
+}
+
+.title {
+    font-family: var(--fontFamily-clashDisplay);
+    font-weight: var(--weight-semiBold);
+    line-height: 1.2;
+}
+
+.h1 {
+    font-size: var(--fontSize-2);
+}
+
+.h2 {
+    font-size: var(--fontSize-3);
+}
+
+.h3 {
+    font-size: var(--fontSize-5);
+}
+
+.h4 {
+    font-size: var(--fontSize-6);
+}
+
+.btn {
+    max-width: max-content;
+    min-width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-weight: var(--weight-semiBold);
+    box-shadow: var(--shadow-2);
+    background-color: var(--bg-white);
+    border: 2px solid var(--border-eerie-black);
+    transition: var(--transition-1);
+}
+
+.btn:is(:hover, :focus-visible) {
+    box-shadow: none;
+}
+
+.btn-primary,
+.btn-secondary {
+    gap: 5px;
+    text-transform: uppercase;
+}
+
+:is(.btn-primary, .btn-secondary) ion-icon {
+    font-size: 2rem;
+    transform: rotate(-45deg);
+}
+
+.btn-primary:is(:hover, :focus-visible) {
+    color: var(--bg-orange-crayola);
+}
+
+.btn-secondary {
+    background-color: var(--bg-orange-crayola);
+}
+
+.img-holder {
+    aspect-ratio: var(--width) / var(--height);
+    background-color: var(--bg-gainsboro);
+    overflow: hidden;
+}
+
+.img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* ---------- HEADER ---------- */
 .navbar .btn {
     display: none;
@@ -179,9 +253,36 @@ ion-icon {
     gap: 4px;
 }
 
-/*-----------------------------------*\
-  #HERO
-\*-----------------------------------*/
+/* ---------- HERO ---------- */
+
+.hero {
+    background-color: var(--bg-wild-blue-yonder);
+    padding-block: 130px 75px;
+}
+
+.hero .container {
+    display: grid;
+    gap: 50px;
+}
+
+.hero-subtitle {
+    font-size: var(--fontSize-4);
+}
+
+.hero-title {
+    margin-block: 16px 30px;
+}
+
+.hero-text {
+    font-size: var(--fontSize-8);
+    line-height: 2.1;
+    margin-bottom: 16px;
+}
+
+.hero-banner {
+    max-width: max-content;
+    margin-inline: auto;
+}
 
 /*-----------------------------------*\
   #FEATURE
