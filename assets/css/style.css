@@ -253,6 +253,12 @@ ion-icon {
     scroll-snap-align: start;
 }
 
+.big-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /* ---------- HEADER ---------- */
 .navbar .btn {
     display: none;
@@ -366,9 +372,27 @@ ion-icon {
     margin-inline: auto;
 }
 
-/*-----------------------------------*\
-  #OFFER
-\*-----------------------------------*/
+/* ---------- OFFER ---------- */
+.offer {
+    padding-block: 100px;
+}
+
+.offer-card {
+    padding: 80px 30px;
+    box-shadow: var(--shadow-2);
+    background-color: var(--bg-white);
+    border: 2px solid var(--border-eerie-black);
+}
+
+.offer-card .card-title {
+    font-size: var(--fontSize-1);
+}
+
+.offer-card .card-text {
+    font-size: var(--fontSize-8);
+    line-height: 1.8;
+    padding-block: 20px 45px;
+}
 
 /*-----------------------------------*\
   #FOOTER
