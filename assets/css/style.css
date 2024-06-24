@@ -352,6 +352,19 @@ ion-icon {
 }
 
 /* ---------- FEATURE ---------- */
+.section.feature {
+    padding-top: 0;
+}
+
+.feature-list {
+    margin-bottom: 60px;
+    display: grid;
+    gap: 60px;
+}
+
+.feature .btn {
+    margin-inline: auto;
+}
 
 /*-----------------------------------*\
   #OFFER
