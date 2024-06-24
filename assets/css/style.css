@@ -114,6 +114,7 @@ ion-icon {
 
 .shape {
     display: none;
+    position: absolute;
 }
 
 .title {
@@ -394,10 +395,111 @@ ion-icon {
     padding-block: 20px 45px;
 }
 
-/*-----------------------------------*\
-  #FOOTER
-\*-----------------------------------*/
+/* ---------- FOOTER ---------- */
+.footer {
+    position: relative;
+    padding-block-start: 160px;
+    background-color: var(--bg-gainsboro);
+}
 
-/*-----------------------------------*\
-  #MEDIA QUERIES
-\*-----------------------------------*/
+.footer-top {
+    margin-block-end: 60px;
+    font-size: var(--fontSize-8);
+    line-height: 1.7;
+    display: grid;
+    gap: 30px;
+}
+
+.footer .logo {
+    margin-block-end: 35px;
+}
+
+.social-list {
+    display: flex;
+    gap: 10px;
+    margin-block-start: 30px;
+}
+
+.social-link {
+    width: 52px;
+    height: 52px;
+    display: grid;
+    place-items: center;
+    border: 2px solid var(--border-eerie-black);
+    border-radius: 50%;
+    box-shadow: var(--shadow-3);
+    background-color: var(--bg-white);
+    transition: var(--transition-1);
+}
+
+.social-link:is(:hover, :focus-visible) {
+    box-shadow: none;
+    color: var(--text-orange-crayola);
+    transform: translateY(-2px);
+    border-color: currentColor;
+}
+
+.footer-list-title {
+    margin-block-end: 30px;
+    font-size: var(--fontSize-10);
+}
+
+.footer-text {
+    margin-block-end: 15px;
+}
+
+.input-field {
+    padding: 15px 30px;
+    margin-block-end: 25px;
+    border: 2px solid var(--border-eerie-black);
+    box-shadow: var(--shadow-2);
+    background-color: var(--bg-white);
+    transition: var(--transition-1);
+    outline: none;
+}
+
+.input-field:is(:focus) {
+    box-shadow: none;
+}
+
+.footer .btn {
+    font-size: 1.6rem;
+    padding-inline: 40px;
+}
+
+.footer-bottom .wrapper {
+    border-bottom: 2px solid var(--border-eerie-black);
+    padding-block-end: 2px;
+}
+
+.link-wrapper {
+    margin-block-end: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 30px;
+}
+
+.footer-bottom-link {
+    font-weight: var(--weight-semiBold);
+    text-transform: uppercase;
+    transition: var(--transition-1);
+}
+
+.footer-bottom-link:is(:hover, :focus-visible) {
+    color: var(--text-orange-crayola);
+}
+
+.copyright {
+    padding-block: 30px;
+    font-size: var(--fontSize-8);
+    text-align: center;
+}
+
+.footer .shape-1 {
+    display: block;
+    top: 0;
+    right: 0;
+}
+
+/* ---------- MEDIA QUERIES ---------- */
